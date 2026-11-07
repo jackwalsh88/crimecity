@@ -1,8 +1,20 @@
-# Crime City v0.2 implementation notes
+# Crime City v0.3 implementation notes
 
 ## Scope
 
 A standalone HTML prototype, with no external fonts or runtime dependencies. This is not yet the Svelte/Pixi frontend or Python math-sdk publication package. Local pseudo-random outcomes are for development only. Production must consume server-authoritative outcome books.
+
+## v0.3 presentation changes
+
+`engine.js` is byte-for-byte unchanged from v0.2 (SHA-256 `72eecf2cb27b5b84d9726ffd1934f32f101b736b61ea5e070d5b49d9d1de9f7e`). The presentation module only consumes resolved event boards and awards.
+
+- Each moving reel uses a real strip containing the previous board, cosmetic passing symbols, and the resolved destination. Normal stops run from 1.32 to 2.02 seconds, with a 175 ms stagger; turbo stops run from 570 to 870 ms. Final strip artwork matches the destination cells. Sticky columns never scroll. Preview exit finishes active reel animations before releasing controls.
+- Camera depth coefficients are 8 / 24 / 50 / 85 / 140 px for sky, skyline, midground, car and foreground. An automatic sweep combines with eased pointer movement; no sensor permission or pointer input is required. Vault and chase single backgrounds use a gentler camera motion. This is presentation only.
+- Canvas particles are capped at 180 and display density at 1.75. Camera updates pause in hidden tabs. Reduced motion disables reel travel, camera translation and particles.
+- Web Audio generates filtered reel noise, landing clicks and win chords. A master gain mutes already-playing sounds as well as future sounds. Audio starts only after an interaction.
+- The existing banner asset displays the actual awarded amount. Small wins, big wins and final celebrations use different treatments; no extra awards or outcome sampling were added.
+
+The HTML bundle includes both presentation files and all artwork. No external runtime requests are needed when it is opened locally.
 
 ## Asset audit
 

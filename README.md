@@ -21,7 +21,7 @@ node --test tests/engine.test.cjs
 Create a single-file offline HTML version:
 
 ```sh
-python3 scripts/bundle.py --output Crime-City-v0.2.html
+python3 scripts/bundle.py --output Crime-City-v0.3.html
 ```
 
 ## Implemented
@@ -33,7 +33,13 @@ python3 scripts/bundle.py --output Crime-City-v0.2.html
 - Free mission previews, recorded demo replay, social wording, sound synthesis, turbo, confirmed autoplay and adjustable demo amounts.
 - Rendering separated from a deterministic event model; visual choices do not change outcomes.
 
-## v0.2: Clean Cut
+## v0.3: Presentation
+
+The mechanics are unchanged from v0.2. Actual scrolling symbol strips replace the old symbol-bobbing animation: each reel accelerates, brakes and settles separately, while sticky reels remain locked. Normal and turbo playback use the same resolved events.
+
+The five supplied city layers now move at visibly different depths using an automatic camera sweep plus pointer response. Foreground travel is much stronger, including on portrait screens. Cabinet lighting, reel-stop sounds, gold/cyan particles, star ignition, wild-reel entrances and the supplied win ribbon accompany the existing outcomes. Reduced-motion preferences disable the camera and reel travel. Sound can be muted during an effect.
+
+## Clean Cut
 
 The katana traces one of the twenty lines and changes low symbols on its route into a single matching crew symbol. Existing crew, badges and briefcases remain intact. It chooses the strongest available improvement without reducing any existing line award, then evaluates the changed board normally. There is no extra split multiplier.
 
@@ -52,6 +58,7 @@ All three retain within-mission heat and sticky briefcases. These are small vari
 | File | Purpose |
 | --- | --- |
 | `dist/index.html`, `style.css`, `app.js` | Responsive game presentation and demo controls |
+| `dist/presentation.js`, `presentation.css` | Reel animation, parallax, cabinet effects and synthesized audio |
 | `dist/engine.js` | Deterministic provisional mechanics and round events |
 | `dist/assets/`, `assets.js` | Optimized artwork and variant pools |
 | `asset-inventory.json` | Source filenames, dimensions, transparency and mapping |
