@@ -1,0 +1,662 @@
+[
+  {
+    "id": "H1",
+    "variant": 0,
+    "source": "Gold revolver sunset portrait emblem.png",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "output_dimensions": [
+      320,
+      320
+    ],
+    "alpha": true,
+    "output": "H1-0.webp"
+  },
+  {
+    "id": "H2",
+    "variant": 0,
+    "source": "Blonde Swordswoman in a Golden Frame.png",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "output_dimensions": [
+      320,
+      320
+    ],
+    "alpha": true,
+    "output": "H2-0.webp"
+  },
+  {
+    "id": "H3",
+    "variant": 0,
+    "source": "H3.png",
+    "original_dimensions": [
+      1339,
+      1174
+    ],
+    "output_dimensions": [
+      320,
+      281
+    ],
+    "alpha": true,
+    "output": "H3-0.webp"
+  },
+  {
+    "id": "H4",
+    "variant": 0,
+    "source": "H4-B.png",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "output_dimensions": [
+      320,
+      320
+    ],
+    "alpha": true,
+    "output": "H4-0.webp"
+  },
+  {
+    "id": "L1",
+    "variant": 0,
+    "source": "L1.png",
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "output_dimensions": [
+      213,
+      320
+    ],
+    "alpha": true,
+    "output": "L1-0.webp"
+  },
+  {
+    "id": "L1",
+    "variant": 1,
+    "source": "L1 copy.png",
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "output_dimensions": [
+      213,
+      320
+    ],
+    "alpha": true,
+    "output": "L1-1.webp"
+  },
+  {
+    "id": "L2",
+    "variant": 0,
+    "source": "L2.png",
+    "original_dimensions": [
+      1479,
+      1063
+    ],
+    "output_dimensions": [
+      320,
+      230
+    ],
+    "alpha": true,
+    "output": "L2-0.webp"
+  },
+  {
+    "id": "L2",
+    "variant": 1,
+    "source": "L2 copy.png",
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "output_dimensions": [
+      320,
+      213
+    ],
+    "alpha": true,
+    "output": "L2-1.webp"
+  },
+  {
+    "id": "L3",
+    "variant": 0,
+    "source": "L3_v1.png",
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "output_dimensions": [
+      320,
+      292
+    ],
+    "alpha": true,
+    "output": "L3-0.webp"
+  },
+  {
+    "id": "L3",
+    "variant": 1,
+    "source": "L3-B.png",
+    "original_dimensions": [
+      1394,
+      1128
+    ],
+    "output_dimensions": [
+      320,
+      259
+    ],
+    "alpha": true,
+    "output": "L3-1.webp"
+  },
+  {
+    "id": "L3",
+    "variant": 2,
+    "source": "L3-C.png",
+    "original_dimensions": [
+      1374,
+      1145
+    ],
+    "output_dimensions": [
+      320,
+      267
+    ],
+    "alpha": true,
+    "output": "L3-2.webp"
+  },
+  {
+    "id": "L4",
+    "variant": 0,
+    "source": "L4 copy.png",
+    "original_dimensions": [
+      1393,
+      1129
+    ],
+    "output_dimensions": [
+      320,
+      259
+    ],
+    "alpha": true,
+    "output": "L4-0.webp"
+  },
+  {
+    "id": "SCATTER",
+    "variant": 0,
+    "source": "SCATTER-B.png",
+    "original_dimensions": [
+      1368,
+      1149
+    ],
+    "output_dimensions": [
+      320,
+      269
+    ],
+    "alpha": true,
+    "output": "SCATTER-0.webp"
+  },
+  {
+    "id": "WILD",
+    "variant": 0,
+    "source": "Glowing briefcase within a golden frame.png",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "output_dimensions": [
+      320,
+      320
+    ],
+    "alpha": true,
+    "output": "WILD-0.webp"
+  },
+  {
+    "id": "beam",
+    "variant": 0,
+    "source": "wild_expanded_beam_1x3.png",
+    "original_dimensions": [
+      803,
+      1959
+    ],
+    "output_dimensions": [
+      266,
+      650
+    ],
+    "alpha": true,
+    "output": "beam-0.webp"
+  },
+  {
+    "id": "beam",
+    "variant": 1,
+    "source": "Gold-and-purple treasure chest with lightning.png",
+    "original_dimensions": [
+      713,
+      2204
+    ],
+    "output_dimensions": [
+      210,
+      650
+    ],
+    "alpha": true,
+    "output": "beam-1.webp"
+  },
+  {
+    "id": "sticky",
+    "variant": 0,
+    "source": "wild_sticky_frame_1x3-A.png",
+    "original_dimensions": [
+      724,
+      2172
+    ],
+    "output_dimensions": [
+      217,
+      650
+    ],
+    "alpha": true,
+    "output": "sticky-0.webp"
+  },
+  {
+    "id": "sticky",
+    "variant": 1,
+    "source": "wild_sticky_frame_v1.png",
+    "original_dimensions": [
+      793,
+      1983
+    ],
+    "output_dimensions": [
+      260,
+      650
+    ],
+    "alpha": true,
+    "output": "sticky-1.webp"
+  },
+  {
+    "id": "bullet",
+    "variant": 0,
+    "source": "fx_bullet_hole_gold-1.png",
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "output_dimensions": [
+      320,
+      213
+    ],
+    "alpha": true,
+    "output": "bullet-0.webp"
+  },
+  {
+    "id": "bullet",
+    "variant": 1,
+    "source": "fx_bullet_hole_gold-2.png",
+    "original_dimensions": [
+      1361,
+      1156
+    ],
+    "output_dimensions": [
+      320,
+      272
+    ],
+    "alpha": true,
+    "output": "bullet-1.webp"
+  },
+  {
+    "id": "bullet",
+    "variant": 2,
+    "source": "fx_bullet_hole_gold-3.png",
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "output_dimensions": [
+      320,
+      213
+    ],
+    "alpha": true,
+    "output": "bullet-2.webp"
+  },
+  {
+    "id": "bullet",
+    "variant": 3,
+    "source": "fx_bullet_hole_gold-4.png",
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "output_dimensions": [
+      320,
+      213
+    ],
+    "alpha": true,
+    "output": "bullet-3.webp"
+  },
+  {
+    "id": "slash",
+    "variant": 0,
+    "source": "fx_katana_slash_beam.png",
+    "original_dimensions": [
+      2172,
+      724
+    ],
+    "output_dimensions": [
+      320,
+      107
+    ],
+    "alpha": true,
+    "output": "slash-0.webp"
+  },
+  {
+    "id": "frame",
+    "variant": 0,
+    "source": "reel_frame_5x3-B.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      1100,
+      617
+    ],
+    "alpha": true,
+    "output": "frame-0.webp"
+  },
+  {
+    "id": "frame",
+    "variant": 1,
+    "source": "reel_frame_5x3_v2.png",
+    "original_dimensions": [
+      1679,
+      937
+    ],
+    "output_dimensions": [
+      1100,
+      614
+    ],
+    "alpha": true,
+    "output": "frame-1.webp"
+  },
+  {
+    "id": "crest",
+    "variant": 0,
+    "source": "wild_mult_crest_blank.png",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "output_dimensions": [
+      320,
+      320
+    ],
+    "alpha": true,
+    "output": "crest-0.webp"
+  },
+  {
+    "id": "logo",
+    "variant": 0,
+    "source": "Crime City Logo Cutout.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      700,
+      392
+    ],
+    "alpha": true,
+    "output": "logo-0.webp"
+  },
+  {
+    "id": "hero",
+    "variant": 0,
+    "source": "Slick Agent with Golden Briefcase.png",
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "output_dimensions": [
+      433,
+      650
+    ],
+    "alpha": true,
+    "output": "hero-0.webp"
+  },
+  {
+    "id": "ribbon",
+    "variant": 0,
+    "source": "win_banner_ribbon.png",
+    "original_dimensions": [
+      1679,
+      937
+    ],
+    "output_dimensions": [
+      320,
+      179
+    ],
+    "alpha": true,
+    "output": "ribbon-0.webp"
+  },
+  {
+    "id": "wildlabel",
+    "variant": 0,
+    "source": "wild_text_plaque.png",
+    "original_dimensions": [
+      2172,
+      724
+    ],
+    "output_dimensions": [
+      320,
+      107
+    ],
+    "alpha": true,
+    "output": "wildlabel-0.webp"
+  },
+  {
+    "id": "scatterlabel",
+    "variant": 0,
+    "source": "scatter_text_plaque.png",
+    "original_dimensions": [
+      2172,
+      724
+    ],
+    "output_dimensions": [
+      320,
+      107
+    ],
+    "alpha": true,
+    "output": "scatterlabel-0.webp"
+  },
+  {
+    "id": "vault",
+    "variant": 0,
+    "source": "bg_freegame.png",
+    "original_dimensions": [
+      2912,
+      1632
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": false,
+    "output": "vault-0.webp"
+  },
+  {
+    "id": "chase",
+    "variant": 0,
+    "source": "bg_superbonus.png",
+    "original_dimensions": [
+      2912,
+      1632
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": false,
+    "output": "chase-0.webp"
+  },
+  {
+    "id": "chaseMobile",
+    "variant": 0,
+    "source": "bg_superbonus_9x16.png",
+    "original_dimensions": [
+      1632,
+      2912
+    ],
+    "output_dimensions": [
+      897,
+      1600
+    ],
+    "alpha": false,
+    "output": "chaseMobile-0.webp"
+  },
+  {
+    "id": "bg",
+    "variant": 0,
+    "source": "bg_basegame_parallax/bg_basegame_parallax_Purple-pink sunset over wet asphalt.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": false,
+    "output": "bg-0.webp"
+  },
+  {
+    "id": "bg",
+    "variant": 1,
+    "source": "bg_basegame_parallax/bg_basegame_parallax_Palm-Lined Cityscape Parallax Layer.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": true,
+    "output": "bg-1.webp"
+  },
+  {
+    "id": "bg",
+    "variant": 2,
+    "source": "bg_basegame_parallax/bg_basegame_parallax_Neon art deco diner facade.png",
+    "original_dimensions": [
+      1676,
+      939
+    ],
+    "output_dimensions": [
+      1600,
+      896
+    ],
+    "alpha": true,
+    "output": "bg-2.webp"
+  },
+  {
+    "id": "bg",
+    "variant": 3,
+    "source": "bg_basegame_parallax/bg_basegame_parallax_Red Muscle Car and Soft Shadow.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": true,
+    "output": "bg-3.webp"
+  },
+  {
+    "id": "bg",
+    "variant": 4,
+    "source": "bg_basegame_parallax/bg_basegame_parallax_Framing palms for a parallax scene.png",
+    "original_dimensions": [
+      1675,
+      939
+    ],
+    "output_dimensions": [
+      1600,
+      897
+    ],
+    "alpha": true,
+    "output": "bg-4.webp"
+  },
+  {
+    "id": "bgMobile",
+    "variant": 0,
+    "source": "bg_basegame_9x16_parallax/05_sky_road_background.png",
+    "original_dimensions": [
+      939,
+      1676
+    ],
+    "output_dimensions": [
+      896,
+      1600
+    ],
+    "alpha": false,
+    "output": "bgMobile-0.webp"
+  },
+  {
+    "id": "bgMobile",
+    "variant": 1,
+    "source": "bg_basegame_9x16_parallax/04_distant_city.png",
+    "original_dimensions": [
+      939,
+      1676
+    ],
+    "output_dimensions": [
+      896,
+      1600
+    ],
+    "alpha": true,
+    "output": "bgMobile-1.webp"
+  },
+  {
+    "id": "bgMobile",
+    "variant": 2,
+    "source": "bg_basegame_9x16_parallax/03_midground_palms.png",
+    "original_dimensions": [
+      939,
+      1676
+    ],
+    "output_dimensions": [
+      896,
+      1600
+    ],
+    "alpha": true,
+    "output": "bgMobile-2.webp"
+  },
+  {
+    "id": "bgMobile",
+    "variant": 3,
+    "source": "bg_basegame_9x16_parallax/01_car.png",
+    "original_dimensions": [
+      939,
+      1676
+    ],
+    "output_dimensions": [
+      896,
+      1600
+    ],
+    "alpha": true,
+    "output": "bgMobile-3.webp"
+  },
+  {
+    "id": "bgMobile",
+    "variant": 4,
+    "source": "bg_basegame_9x16_parallax/02_foreground_palms.png",
+    "original_dimensions": [
+      939,
+      1676
+    ],
+    "output_dimensions": [
+      896,
+      1600
+    ],
+    "alpha": true,
+    "output": "bgMobile-4.webp"
+  }
+]

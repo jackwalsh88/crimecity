@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#120a24"><meta name="description" content="Crime City: a neon crime-cinema slot concept. Play the demo and explore three bonus missions."><title>Crime City — Playable Prototype</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="world" aria-hidden="true"></div><div class="shade"></div><div class="grain"></div>
+<div id="loading"><div class="loading-mark">CRIME CITY</div><p id="loadText">ENTERING THE CITY</p><div class="loadtrack"><i id="loadBar"></i></div></div>
+<div class="game-shell">
+<header><img id="logo" alt="Crime City"><div class="edition"><i></i> <span id="editionText">PLAYABLE PROTOTYPE</span><small>DEMO TOKENS ONLY</small></div><button class="quiet" id="info" aria-label="Rules and win table">ⓘ</button></header>
+<main>
+<div class="missionline"><span class="eyebrow" id="act">ACT I · STREETS OF VICE</span><span id="maxLabel">MAX WIN <b>15,000×</b></span></div>
+<div class="machine" id="machine">
+<img id="frame" class="frame" alt="">
+<div class="wanted" aria-label="Wanted heat"><span id="stars">★★★★★</span><b id="heatMultiplier">0× HEAT</b></div>
+<div id="reels" class="reels" role="group" aria-label="Five reels, three rows"></div>
+<div id="expanded" class="expanded"></div>
+<svg class="lines" id="lines" viewBox="0 0 500 300" preserveAspectRatio="none" aria-hidden="true"></svg>
+<div id="effects" class="effects"></div>
+<div class="frame-caption"><span id="lineLabel">20 FIXED LINES</span><span id="heatName">NO HEAT. NO WITNESSES.</span></div>
+</div>
+<div class="status" id="status" role="status" aria-live="polite">The city is yours. Make your move.</div>
+<div class="bonus-progress" id="bonusProgress" hidden><span id="bonusCount"></span><i id="bonusTrack"></i></div>
+</main>
+<footer>
+<div class="console">
+<button id="features" class="feature-button" aria-label="Explore bonus missions"><span>★</span><div>THE MISSIONS<small>EXPLORE FEATURES</small></div></button>
+<div class="stat balance-stat"><span>DEMO BALANCE</span><strong id="balance">1,000.00</strong><small class="unit">TOKENS</small></div>
+<div class="amount"><span id="betLabel">BET AMOUNT</span><div><button id="minus" aria-label="Decrease amount">−</button><strong id="amount">1.00</strong><button id="plus" aria-label="Increase amount">+</button></div></div>
+<button id="spin" class="spin" aria-label="Spin"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M31 14A13 13 0 1 0 32 26M31 5v10H21"/></svg><span id="spinText">SPIN</span></button>
+<div class="stat win-stat"><span id="winLabel">LAST WIN</span><strong id="win">0.00</strong><small class="unit">TOKENS</small></div>
+<div class="utilities"><button id="turbo" aria-label="Turbo off" aria-pressed="false">ϟ</button><button id="autoplay" aria-label="Autoplay">↻<small>AUTO</small></button><button id="sound" aria-label="Sound on" aria-pressed="false">♫</button></div>
+</div>
+<div class="subfooter"><span>CRIME CITY <b>v0.1</b></span><button id="replay">REPLAY LAST ROUND</button><button id="social">SOCIAL MODE: OFF</button><span class="shortcut">SPACE TO SPIN</span></div>
+</footer>
+</div>
+<dialog id="modal"><button id="closeModal" class="close" aria-label="Close dialog">×</button><div id="modalContent"></div></dialog>
+<div id="celebration" hidden><img id="celebrateHero" alt=""><div><span id="celebrateTitle"></span><strong id="celebrateAmount"></strong><p id="celebrateSub"></p><button id="continue">CONTINUE</button></div></div>
+<script src="assets.js"></script><script src="engine.js"></script><script src="app.js"></script>
+</body></html>
