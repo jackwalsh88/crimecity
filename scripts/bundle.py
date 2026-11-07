@@ -1,7 +1,7 @@
 """Build a portable single-file HTML from the current static game."""
 import argparse,base64,json
 from pathlib import Path
-parser=argparse.ArgumentParser();parser.add_argument('--output',default='Crime-City-v0.1.html');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--output',default='Crime-City-v0.2.html');args=parser.parse_args()
 root=Path(__file__).resolve().parents[1];dist=root/'dist'
 manifest=json.loads((dist/'assets.js').read_text().split('=',1)[1].strip().rstrip(';'))
 for key,files in manifest.items():
@@ -11,3 +11,4 @@ html=html.replace('<script src="assets.js"></script>','<script>window.ASSETS='+j
 for script in ['engine.js','app.js']:
  html=html.replace(f'<script src="{script}"></script>','<script>'+(dist/script).read_text()+'</script>')
 p=Path(args.output);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(html);print(str(p.resolve()),p.stat().st_size)
+

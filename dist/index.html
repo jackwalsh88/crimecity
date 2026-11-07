@@ -4,7 +4,7 @@
 <div id="world" aria-hidden="true"></div><div class="shade"></div><div class="grain"></div>
 <div id="loading"><div class="loading-mark">CRIME CITY</div><p id="loadText">ENTERING THE CITY</p><div class="loadtrack"><i id="loadBar"></i></div></div>
 <div class="game-shell">
-<header><img id="logo" alt="Crime City"><div class="edition"><i></i> <span id="editionText">PLAYABLE PROTOTYPE</span><small>DEMO TOKENS ONLY</small></div><button class="quiet" id="info" aria-label="Rules and win table">ⓘ</button></header>
+<header><img id="logo" alt="Crime City"><button id="katanaDemo" class="katana-demo"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M6 23 23 5Q23 15 11 21M5 19l6 6M3 26l4-4"/></svg><span>WATCH CLEAN CUT<small>NEW KATANA FEATURE</small></span></button><button id="endPreview" class="end-preview" hidden>END PREVIEW</button><div class="edition"><i></i> <span id="editionText">PLAYABLE PROTOTYPE</span><small>DEMO TOKENS ONLY</small></div><button class="quiet" id="info" aria-label="Rules and win table">ⓘ</button></header>
 <main>
 <div class="missionline"><span class="eyebrow" id="act">ACT I · STREETS OF VICE</span><span id="maxLabel">MAX WIN <b>15,000×</b></span></div>
 <div class="machine" id="machine">
@@ -28,10 +28,11 @@
 <div class="stat win-stat"><span id="winLabel">LAST WIN</span><strong id="win">0.00</strong><small class="unit">TOKENS</small></div>
 <div class="utilities"><button id="turbo" aria-label="Turbo off" aria-pressed="false">ϟ</button><button id="autoplay" aria-label="Autoplay">↻<small>AUTO</small></button><button id="sound" aria-label="Sound on" aria-pressed="false">♫</button></div>
 </div>
-<div class="subfooter"><span>CRIME CITY <b>v0.1</b></span><button id="replay">REPLAY LAST ROUND</button><button id="social">SOCIAL MODE: OFF</button><span class="shortcut">SPACE TO SPIN</span></div>
+<div class="subfooter"><span>CRIME CITY <b>v0.2</b></span><button id="replay">REPLAY LAST ROUND</button><button id="social">SOCIAL MODE: OFF</button><span class="shortcut">SPACE TO SPIN</span></div>
 </footer>
 </div>
 <dialog id="modal"><button id="closeModal" class="close" aria-label="Close dialog">×</button><div id="modalContent"></div></dialog>
 <div id="celebration" hidden><img id="celebrateHero" alt=""><div><span id="celebrateTitle"></span><strong id="celebrateAmount"></strong><p id="celebrateSub"></p><button id="continue">CONTINUE</button></div></div>
 <script src="assets.js"></script><script src="engine.js"></script><script src="app.js"></script>
 </body></html>
+

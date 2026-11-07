@@ -21,17 +21,31 @@ node --test tests/engine.test.cjs
 Create a single-file offline HTML version:
 
 ```sh
-python3 scripts/bundle.py --output Crime-City-v0.1.html
+python3 scripts/bundle.py --output Crime-City-v0.2.html
 ```
 
 ## Implemented
 
 - Five reels, three rows, twenty fixed left-to-right lines and the supplied symbol values.
 - Random cosmetic variants, proportional symbol containment, separate portrait and landscape five-layer parallax.
-- Within-round heat, gunfire upgrades, katana splits, conditional base wild expansion, sticky bonus wilds, additive multipliers and crossfire doubling.
+- Within-round heat, gunfire upgrades, **Clean Cut** katana transformations, conditional base wild expansion, sticky bonus wilds, additive multipliers and crossfire doubling.
 - Three bonus tiers, scatter retriggers, a 40-awarded-spin ceiling and a total-round 15,000× cap.
 - Free mission previews, recorded demo replay, social wording, sound synthesis, turbo, confirmed autoplay and adjustable demo amounts.
 - Rendering separated from a deterministic event model; visual choices do not change outcomes.
+
+## v0.2: Clean Cut
+
+The katana traces one of the twenty lines and changes low symbols on its route into a single matching crew symbol. Existing crew, badges and briefcases remain intact. It chooses the strongest available improvement without reducing any existing line award, then evaluates the changed board normally. There is no extra split multiplier.
+
+Use **Watch Clean Cut** for a short, fixed demonstration; use **The Missions** to explore free bonus previews. An **End Preview** control exits a preview without touching the balance.
+
+| Mission | Starting conditions | Character |
+| --- | --- | --- |
+| The Vault Job | 10 spins, sticky briefcases | Build a locked collection in the vault |
+| Neon Rampage | 12 spins, at least 3★ heat, Clean Cut each spin | Recruit matching crew across the neon strip |
+| Midnight Pursuit | 12 spins, 5★ heat, one guaranteed sticky briefcase | Begin the helicopter chase at maximum heat |
+
+All three retain within-mission heat and sticky briefcases. These are small variations for design review; probabilities and rewards remain provisional. The fixed katana study isolates that feature and is not a frequency sample.
 
 ## Source layout
 
@@ -54,3 +68,4 @@ python3 scripts/bundle.py --output Crime-City-v0.1.html
 - The Missions drawer previews bonus rounds for free. Its results never alter the demo balance.
 
 See [implementation notes](docs/IMPLEMENTATION.md) before porting this to a production engine. Artwork was supplied by the project owner; no broader intellectual-property clearance is asserted.
+
