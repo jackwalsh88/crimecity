@@ -1,8 +1,8 @@
-# Crime City v0.3 implementation notes
+# Crime City v0.4 implementation notes
 
 ## Scope
 
-A standalone HTML prototype, with no external fonts or runtime dependencies. This is not yet the Svelte/Pixi frontend or Python math-sdk publication package. Local pseudo-random outcomes are for development only. Production must consume server-authoritative outcome books.
+A standalone HTML prototype, with an embedded Bowlby One SC font and no external runtime dependencies. This is not yet the Svelte/Pixi frontend or Python math-sdk publication package. Local pseudo-random outcomes are for development only. Production must consume server-authoritative outcome books.
 
 ## v0.3 presentation changes
 

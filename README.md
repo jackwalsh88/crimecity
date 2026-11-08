@@ -21,7 +21,7 @@ node --test tests/engine.test.cjs
 Create a single-file offline HTML version:
 
 ```sh
-python3 scripts/bundle.py --output Crime-City-v0.3.html
+python3 scripts/bundle.py --output Crime-City-v0.4.html
 ```
 
 ## Implemented
@@ -32,6 +32,10 @@ python3 scripts/bundle.py --output Crime-City-v0.3.html
 - Three bonus tiers, scatter retriggers, a 40-awarded-spin ceiling and a total-round 15,000× cap.
 - Free mission previews, recorded demo replay, social wording, sound synthesis, turbo, confirmed autoplay and adjustable demo amounts.
 - Rendering separated from a deterministic event model; visual choices do not change outcomes.
+
+## v0.4: Typography
+
+Bowlby One SC now styles the headings, controls, amounts and win displays. Small explanatory text keeps a plain sans-serif face. The original font and SIL OFL license are included under `dist/fonts`; the portable HTML embeds both and makes no Google Fonts requests. Number sizes adapt to their available width. Math, reels and parallax are unchanged.
 
 ## v0.3: Presentation
 

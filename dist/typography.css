@@ -1,0 +1,76 @@
+/* Bowlby One SC by Vernon Adams. Original font; SIL OFL 1.1, bundled alongside it. */
+@font-face {
+ font-family:'Bowlby One SC';
+ src:url('fonts/BowlbyOneSC-Regular.ttf') format('truetype');
+ font-style:normal;
+ font-weight:400;
+ font-display:swap;
+}
+:root { --display-font:'Bowlby One SC',Arial,Helvetica,sans-serif; }
+.loading-mark,dialog h1,dialog h2,.mission-card strong,.mission-number,.cut-study strong,
+.cut-callout strong,#celebrateTitle,#celebrateAmount,#continue,#splashTitle,#splashAmount,
+.stat strong,.amount strong,.crest b,#maxLabel b,.feature-button>div,.spin>span,
+.primary,.secondary,.auto-options button,.katana-demo>span,.end-preview,#heatMultiplier,
+.frame-caption,#status,#act {
+ font-family:var(--display-font);
+ font-weight:400;
+ font-synthesis:none;
+}
+.feature-button small,.katana-demo small { font-family:Arial,Helvetica,sans-serif; }
+.katana-demo>span,.feature-button>div { letter-spacing:.35px; }
+#act { letter-spacing:.6px; }
+dialog h1 { font-size:24px;letter-spacing:0;line-height:1.3; }
+dialog h2 { font-size:14px;line-height:1.4; }
+.mission-card strong { font-size:18px;line-height:1.3; }
+.mission-card>div { min-width:0; }
+.mission-number { letter-spacing:-1px; }
+.cut-study strong { font-size:18px; }
+.cut-callout strong { font-style:normal;letter-spacing:0; }
+.crest b { font-size:clamp(10px,1.8vw,21px);letter-spacing:-.6px; }
+.frame-caption { letter-spacing:.3px; }
+#heatMultiplier { letter-spacing:.5px; }
+#status { font-size:10px;line-height:1.6;letter-spacing:.25px; }
+.stat { container-type:inline-size;flex:0 1 120px;min-width:0;width:120px; }
+.stat strong { display:block;font-size:min(18px,calc(130cqw / var(--digits,7)));letter-spacing:0; }
+.amount strong { font-size:15px;letter-spacing:0; }
+.feature-button { font-size:9px; }
+.spin>span { letter-spacing:.35px; }
+.splash-copy { container-type:inline-size; }
+#splashTitle { font-size:clamp(5px,4.7cqw,12px);letter-spacing:1px; }
+#splashAmount { font-size:min(54px,calc(130cqw / var(--digits,5)));letter-spacing:-.5px;line-height:1.15; }
+#splashUnit { font-size:clamp(5px,3cqw,9px); }
+#celebration .celebrate-copy { min-width:0;max-width:65vw;width:650px;padding:20px;container-type:inline-size; }
+#celebrateTitle { font-size:clamp(20px,7.5cqw,54px);max-width:100%;line-height:1.2;letter-spacing:0;text-wrap:balance; }
+#celebrateAmount { font-size:min(95px,calc(130cqw / var(--digits,5)));line-height:1.3;letter-spacing:-1px; }
+#celebrateSub { line-height:1.6; }
+@media(max-width:1000px){.stat{width:100px;flex-basis:100px}.stat strong{font-size:min(16px,calc(130cqw / var(--digits,7)))}}
+@media(max-width:799px){.stat{width:85px;flex-basis:85px}.stat strong{font-size:min(14px,calc(130cqw / var(--digits,7)))}.amount strong{font-size:13px}.feature-button{font-size:8px}}
+@media(orientation:portrait){
+ .console{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .stat{width:100%}.stat strong{font-size:min(17px,calc(130cqw / var(--digits,7)))}
+ .amount strong{font-size:16px;min-width:41px}.amount>div{gap:5px}
+ #act{font-size:7px;letter-spacing:.2px}#maxLabel b{font-size:10px}
+ .feature-button{font-size:8px}.frame-caption{font-size:5.5px;letter-spacing:0}
+ #status{font-size:9px}.crest b{font-size:12px}
+ .mission-card strong{font-size:16px}.mission-number{font-size:22px}
+ dialog h1{font-size:21px}.cut-callout strong{font-size:22px}
+ #celebration .celebrate-copy{width:100%;max-width:100vw;padding:24px}
+ #celebrateTitle{font-size:clamp(25px,8cqw,42px)}
+ #celebrateAmount{font-size:min(64px,calc(130cqw / var(--digits,5)))}
+}
+@media(max-height:450px) and (orientation:landscape){
+ .stat{width:90px;flex-basis:90px}.stat strong{font-size:min(12px,calc(130cqw / var(--digits,7)))}
+ .amount strong{font-size:12px}.feature-button{font-size:7px}#status{font-size:7px}
+ #splashAmount{font-size:min(30px,calc(130cqw / var(--digits,5)))}
+ .crest b{font-size:11px}.frame-caption{font-size:4.5px}
+ #celebration .celebrate-copy{padding:10px}
+ #celebrateTitle{font-size:clamp(18px,7cqw,36px)}
+ #celebrateAmount{font-size:min(58px,calc(130cqw / var(--digits,5)))}
+ #celebrateSub{margin:6px 0}
+}
+@media(max-width:500px) and (orientation:landscape){
+ .stat{width:55px;flex-basis:55px}.stat strong{font-size:min(10px,calc(130cqw / var(--digits,7)))}
+ .amount strong{font-size:10px}.feature-button{font-size:5.5px}#status{font-size:5.5px}
+ .frame-caption{font-size:3.5px}.crest b{font-size:8px}
+ .cut-callout strong{font-size:15px}
+}

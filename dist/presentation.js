@@ -123,6 +123,7 @@ function hideWin(){clearTimeout(winTimer);if(winAnimation){winAnimation.cancel()
 function win(awarded,amount,{turbo=false,format=String}={}){
  hideWin();if(awarded<=0)return Promise.resolve();
  const el=$('winSplash'),number=$('splashAmount'),value=awarded*amount;
+ number.style.setProperty('--digits',format(value).length);
  $('splashRibbon').src=A.ribbon[0];$('splashTitle').textContent=awarded>=100?'HEIST SCORE':awarded>=20?'BIG WIN':'LINE WIN';$('splashUnit').textContent='';
  el.hidden=false;el.dataset.size=awarded>=100?'large':'normal';
  chime(awarded>=20);pulse();burst($('reels'),awarded>=100?90:awarded>=20?60:25);if(awarded>=20)kick();
