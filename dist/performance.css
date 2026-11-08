@@ -1,0 +1,39 @@
+/* v0.5: isolate animation surfaces; never filter the live machine subtree. */
+.machine,.machine .frame,.machine.is-spinning .frame { filter:none; }
+.cell img.symbol,.cell .label,.wild-reel,.cell.winner .symbol { filter:none; }
+.cell img.symbol { transition:none; }
+.cell { contain:layout style; }
+.reel-motion { display:block;contain:strict; }
+.reel-canvas { display:block;width:100%;height:100%; }
+.machine.is-spinning .cell:not(.in-motion) { opacity:1; }
+.cell.in-motion { opacity:0; }
+.reels { contain:layout paint style; }
+.layer { will-change:transform;contain:layout paint style; }
+#world { transition:transform .25s ease-out; }
+.grain { display:none; }
+.city-atmosphere i { mix-blend-mode:normal; }
+.rim-lights { display:none; }
+.reel-motion::after { content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 14px 17px -14px #000,inset 0 -14px 17px -14px #000; }
+.machine::after { content:'';position:absolute;left:17%;top:25.2%;width:66%;height:56.3%;z-index:9;border:1px solid #76fff15e;box-shadow:0 0 9px #27fff12b;pointer-events:none; }
+.machine.is-spinning::after { border-color:#fff2a4;box-shadow:0 0 12px #ffdb5c77; }
+.star.ignited { animation:starIgniteFast .65s ease-out both; }
+.star.lit { filter:none;text-shadow:0 0 6px #ffb531; }
+.cell.landed { animation:none; }
+.cell.landed .symbol { animation:symbolLand .28s ease-out both; }
+.cell.winner { box-shadow:inset 0 0 15px #ffd67880; }
+.lines polyline,.cut-trace,.cut-blade,.cut-callout img { filter:none; }
+.cutting .cell:not(.cut-focus) { filter:none;opacity:.35; }
+.cutting .cell { transition:opacity .2s; }
+.cell.cut-hit .symbol { animation:cutHitFast .35s both; }
+.ricochet { animation:crossfireFast .5s 2; }
+.win-splash,.win-splash>img,#celebrateHero,#celebrateTitle { filter:none; }
+.win-splash { will-change:transform,opacity; }
+dialog::backdrop,#celebration { backdrop-filter:none; }
+#celebration .celebrate-rays { left:50%;top:50%;width:110vmax;height:110vmax;transform:translate(-50%,-50%);animation:raysFast 70s linear infinite;mask-image:none;opacity:.55; }
+.frame-caption,.wanted,.console { isolation:isolate; }
+#performanceHUD { position:fixed;right:10px;top:10px;z-index:100;white-space:pre;background:#080c15e8;color:#91ffda;border:1px solid #79cdb4;padding:10px 14px;border-radius:6px;font:12px/1.6 monospace;pointer-events:none; }
+@keyframes starIgniteFast { 0%{transform:scale(.5) rotate(-18deg)}60%{transform:scale(1.35) rotate(7deg)}100%{transform:none} }
+@keyframes cutHitFast { 50%{opacity:.45;transform:scale(.75) rotate(-12deg)}100%{opacity:.25;transform:scale(.85)} }
+@keyframes crossfireFast { 50%{opacity:.65;transform:scale(1.02)} }
+@keyframes raysFast { to{transform:translate(-50%,-50%) rotate(360deg)} }
+@media(prefers-reduced-motion:reduce){#world{transition:none}.star.ignited,.cell.landed .symbol,.cell.cut-hit .symbol,.ricochet,#celebration .celebrate-rays{animation:none}}

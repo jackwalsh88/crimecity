@@ -1,10 +1,14 @@
-# Crime City v0.4 implementation notes
+# Crime City v0.5 implementation notes
 
 ## Scope
 
 A standalone HTML prototype, with an embedded Bowlby One SC font and no external runtime dependencies. This is not yet the Svelte/Pixi frontend or Python math-sdk publication package. Local pseudo-random outcomes are for development only. Production must consume server-authoritative outcome books.
 
-## v0.3 presentation changes
+## Current renderer (v0.5)
+
+See [PERFORMANCE.md](PERFORMANCE.md). The live strip and particle implementation described in the historical v0.3 section below has been replaced with a bounded canvas renderer, retained DOM and compositor parallax.
+
+## v0.3 presentation changes (historical)
 
 `engine.js` is byte-for-byte unchanged from v0.2 (SHA-256 `72eecf2cb27b5b84d9726ffd1934f32f101b736b61ea5e070d5b49d9d1de9f7e`). The presentation module only consumes resolved event boards and awards.
 

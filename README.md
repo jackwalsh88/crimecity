@@ -21,7 +21,7 @@ node --test tests/engine.test.cjs
 Create a single-file offline HTML version:
 
 ```sh
-python3 scripts/bundle.py --output Crime-City-v0.4.html
+python3 scripts/bundle.py --output Crime-City-v0.5.html
 ```
 
 ## Implemented
@@ -32,6 +32,14 @@ python3 scripts/bundle.py --output Crime-City-v0.4.html
 - Three bonus tiers, scatter retriggers, a 40-awarded-spin ceiling and a total-round 15,000× cap.
 - Free mission previews, recorded demo replay, social wording, sound synthesis, turbo, confirmed autoplay and adjustable demo amounts.
 - Rendering separated from a deterministic event model; visual choices do not change outcomes.
+
+## v0.5: Rendering rewrite
+
+The reel animation now uses one clipped canvas and pre-rendered symbol sprites, drawing at most four visible symbols per moving column. It no longer constructs or blurs long DOM strips. The 15 settled cells and sticky-wild nodes are retained between events. The math is unchanged.
+
+Five parallax layers use compositor animations instead of per-frame JavaScript style changes. Canvas particles reuse pre-baked glow sprites; the particle surface is cleared only while active. Reels, particles and amount counters share one on-demand frame loop. The game stops scheduling JavaScript animation frames at idle unless the diagnostic display is open. Ancestor filters, live strip blur and full-screen backdrop blur were removed. Sound, staggered stops, bounce, katana, missions, replay and Bowlby One SC remain.
+
+Press **F8** to show requestAnimationFrame cadence and p95 frame interval on your device. A 60 Hz display should generally show about 60 FPS and 16.7 ms intervals. Remote-browser frame throttling makes that environment unsuitable for certifying local hardware performance. See `docs/PERFORMANCE.md` for validation and reproducible checks.
 
 ## v0.4: Typography
 
